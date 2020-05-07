@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokemonButton {
+    height: 125px;
+    width: 125px;
+
+    margin: 10px;
+
+    text-transform: capitalize;
+    font-size: 15px;
+    color: yellowgreen;
+
+    background-image: url("https://i.dlpng.com/static/png/6929253_preview.png");
+    background-size: contain;
+    background-position: center;
+
+    border-color: rgb(56, 56, 56);
+    border-radius: 100%;
+
+    cursor: pointer;
+    outline: none;
+}
+
+.pokemonButton p {
+    text-shadow: -1px 0px 0px rgb(56, 56, 56);
+    background-color: rgb(56, 56, 56);
+}

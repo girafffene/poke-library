@@ -1,13 +1,12 @@
 import React from "react"
-// import axios from "axios"
+import Popup from "reactjs-popup"
 import '../styles/base.css';
+import "../styles/home.css"
 
-import { usePokemon } from "../redux/ducks/poke_ducks"
+import { usePokemon } from "../hooks"
 
 export default function Pokemons() {
-  const { getPokemon } = usePokemon()
-
-  getPokemon()
+  const { pokeMon, pushName, pokeStats } = usePokemon()
 
   return (
     <div>
@@ -15,43 +14,49 @@ export default function Pokemons() {
         <h1>Pokemon Library</h1>
       </header>
       <div className="wrapper">
-        {/* { getPokemon.map(animal => (
-          <div>
-            <ul key={"pokemon" + animal.name}>
-              <li>
-                <div>
-                  <img src={person.img} />
-                </div>
-              </li>
+        { pokeMon.map(animal => (
+          <div onClick={e => pushName(animal.name)} id={animal.name} key={`animal + ${animal.name}`}>
 
-              <li>
+            <Popup trigger={
+            <button className="pokemonButton">
+              <p>{animal.name}</p>
+            </button>} position="right center">
+
+              <div className="pokeStatsCard">
+
+                <img src={pokeStats.img} alt="pokemon" className="pokeImg"/>
+
                 <p>
-                  <strong>Name:</strong> {animal.name}
+                  <strong>
+                    Height:&nbsp;
+                  </strong>
+                  {pokeStats.height}
                 </p>
-              </li> 
-              <li>
+
                 <p>
-                  <strong>Height:</strong> {animal.height}
+                  <strong>
+                    Weight:&nbsp;
+                  </strong>
+                  {pokeStats.weight}
                 </p>
-              </li>
-              <li>
+
                 <p>
-                  <strong>Weight:</strong> {animal.weight}
+                  <strong>
+                    Abilities:&nbsp;
+                  </strong>
+                  {pokeStats.abilities}
                 </p>
-              </li>
-              <li>
+
                 <p>
-                  <strong>Types:</strong> {animal.types}
+                  <strong>
+                    Type(s):&nbsp;
+                  </strong>
+                  {pokeStats.types}
                 </p>
-              </li>
-              <li>
-                <p>
-                  <strong>Abilities:</strong> {animal.abilities}
-                </p>
-              </li>
-            </ul>
+              </div>
+            </Popup>
           </div>
-        ))} */}
+        ))}
       </div>
     </div>
   )

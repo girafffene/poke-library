@@ -1,40 +1,60 @@
+const axios = require("axios")
 const express = require("express")
 const router = express.Router()
-const axios = require("axios")
 
-// const data = {
-//     pokemon: [],
-//     allPokemon: []
-// }
+data = {
+    pokeName: ""
+}
+
 
 //calling API to get information
 router.get("/newpokemon", (req, res, next) => {
-    axios.get("https://pokeapi.co/api/v2/pokemon/").then(resp => {
-        const obj = resp.data
+    axios.get("https://pokeapi.co/api/v2/pokemon/?limit=22").then(resp => {
+        const obj = resp.data.results
         
-        const pokedata = {
-            name: obj.results.name,
-
-            // height: obj.height,
-            // weight: obj.weight,
-            // abilities: obj.abilities,
-            // stats: obj.stats,
-            // types: obj.types
-        }
-        console.log(pokedata)
-        res.json(pokedata)
+        res.json(obj)
     })
 })
 
-// router.post("/allPokemon", (req, res, next) => {
-//     data.allPokemon.push(req.body.pokedata)
-//     console.log(allPokemon)
-  
-//     res.json(data.allPokemon)
-// })
+router.post("/pokename", (req, res, next) => {
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${req.body.pokeName}`).then(
+        resp => {
+            const stats = resp.data
 
-// router.get("/allpoke", (req, res, next) => {
-//     res.json(data.allPokemon)
-//   })
+            // bringing in stats
+            const pokeStats = {
+                height: stats.height,
+
+                weight: stats.weight,
+
+                //checking whether the pokemon is the first in the evolution chain
+                firstEvo: stats.is_default,
+
+                //pulling in pokemon's abilities
+                abilities: stats.abilities.map(ability => {
+                    if (stats.abilities.length > 1) {
+                        return `${ability.ability.name}, `
+                    } else {
+                        return ability.ability.name
+                    }
+                }),
+
+                //bringing in the type of the pokemon
+                types: stats.types.map(type => {
+                    if (stats.types.length > 1) {
+                        return `${type.type.name}` + `, `
+                    } else {
+                        return type.type.name
+                    }
+                }),
+
+                img: stats.sprites.front_default,
+            }
+            
+            console.log(pokeStats)
+            res.json(pokeStats)
+        }
+    )
+})
 
 module.exports = router

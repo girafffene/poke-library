@@ -3,24 +3,24 @@ import axios from "axios"
 import { useEffect } from "react"
 
 const GET_POKEMON = "pokemon/GET_POKEMON"
-// const GET_ALL_POKEMON = "pokemon/GET_ALL_POKEMON"
-// const ADD_TO_ARRAY = "pokemon/ADD_TO_ARRAY"
+const GET_STATS = "pokemon/GET_STATS"
+const SET_POKESTATS = "pokemon/SET_POKESTATS"
 
 const initialState = {
-  pokemon: {},
-  allPokemon: []
+  allPokemon: [],
+  stats: {},
 }
 
 export default (state = initialState, action) => {
   switch (action.type) {
     case GET_POKEMON:
-      return { ...state, pokemon: action.payload }
+      return { ...state, allPokemon: action.payload }
 
-    // case ADD_TO_ARRAY:
-    //   return { ...state, allPokemon: action.payload }
+    case SET_POKESTATS:
+      return { ...state, stats: action.payload}
 
-    // case GET_ALL_POKEMON:
-    //   return { ...state, getAllPokemon: action.payload}
+    case GET_STATS:
+      return { ...state, stats: action.payload}
 
     default:
       return state
@@ -31,7 +31,6 @@ export default (state = initialState, action) => {
 function getPokemon() {
   return dispatch => {
     axios.get("/api/newpokemon").then(resp => {
-      console.log(resp)
       dispatch({
         type: GET_POKEMON,
         payload: resp.data
@@ -40,52 +39,36 @@ function getPokemon() {
   }
 }
 
-// export function addPokemon(pokemon) {
-//   return dispatch => {
-//     axios.post("/api/addPokemon", { pokemon }).then(resp => {
-//       dispatch({
-//         type: ADD_TO_ARRAY,
-//         payload: resp.data.length
-//       })
-//       dispatch(getPokemon())
-//     })
-//   }
-// }
+function pushPokeName(pokeName) {
+  return dispatch => {
+    axios.post("/api/pokename", { pokeName }).then(resp => {
+      dispatch({
+        type: SET_POKESTATS,
+        payload: resp.data
+      })
+    })
+  }
+}
 
-// //grabs all pokemon and throws them into an array
-// function getAllPokemon() {
-//   return dispatch => {
-//     axios.get("/api/allpoke").then(resp => {
-//       dispatch({
-//         type: GET_ALL_POKEMON,
-//         payload: resp.data
-//       })
-//     })
-//   }
-// }
 
 //function for custom hook
 export function usePokemon() {
   const dispatch = useDispatch()
 
-  const pokeMon = useSelector(appState => appState.pokeState.pokemon)
-  // console.log(pokeMon)
+  const pokeMon = useSelector(appState => appState.pokeState.allPokemon)
 
-  // const allPoke = poke => dispatch(addPokemon(poke))
-  // const getAllPoke = useSelector(appState => appState.pokeState.allPokemon)
+  const pokeStats = useSelector(appState => appState.pokeState.stats)
 
-  // const allPokemonArray = poke => dispatch(getAllPokemon(poke))
+  const pushName = pokeName => dispatch(pushPokeName(pokeName))
 
 
   useEffect(() => {
     dispatch(getPokemon())
   }, [dispatch])
 
-  // useEffect(() => {
-  //   dispatch(getAllPokemon())
-  // }, [dispatch])
-
   return {
-    pokeMon, getPokemon
+    pokeMon,
+    pokeStats,
+    pushName
   }
 }
