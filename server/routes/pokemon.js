@@ -9,7 +9,7 @@ data = {
 
 //calling API to get information
 router.get("/newpokemon", (req, res, next) => {
-    axios.get("https://pokeapi.co/api/v2/pokemon/?limit=6").then(resp => {
+    axios.get("https://pokeapi.co/api/v2/pokemon/?limit=12").then(resp => {
         const obj = resp.data.results
         
         res.json(obj)
@@ -26,6 +26,8 @@ router.post("/pokename", (req, res, next) => {
                 height: stats.height,
 
                 weight: stats.weight,
+
+                name: stats.name,
 
                 //checking whether the pokemon is the first in the evolution chain
                 firstEvo: stats.is_default,

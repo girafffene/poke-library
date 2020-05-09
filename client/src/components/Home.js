@@ -1,11 +1,13 @@
 import React, {useState} from "react"
-import Button from "react-bootstrap/Button"
+
 import Modal from "react-bootstrap/Modal"
 import Container from "react-bootstrap/Container"
+import Button from "react-bootstrap/Button"
 import { Col, Row } from "react-bootstrap"
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/base.css';
 import "../styles/home.css"
-
 
 import { usePokemon } from "../hooks"
 
@@ -27,63 +29,52 @@ export default function Pokemons() {
           <div onClick={e => pushName(animal.name)} id={animal.name} key={`animal + ${animal.name}`}>
 
             <Button className="pokemonButton" variant="primary" onClick={handleShow}>
-              {animal.name}
+              <p>
+                {animal.name}
+              </p>
             </Button>
 
-            <Modal show={show} onHide={handleClose}>
-              <Modal.Header>
+            <Modal show={show} onHide={handleClose} centered={true} size="sm">
+              <Modal.Header className="pokename-title">
                 <Modal.Title id="contained-modal-title-vcenter">
-                  {animal.name}
+                  {pokeStats.name}
                 </Modal.Title>
               </Modal.Header>
 
               <Modal.Body>
                 <Container>
                   <Row className="show-grid">
-                    <Col>
-                      <img src={pokeStats.img} alt="pokemon" className="pokeImg"/>
-                    </Col>
+                    <Col md={12} className="modal-column">
+                      <code>
+                        <img src={pokeStats.img} alt="pokemon" className="pokeImg"/>
 
-                    <Col>
-                      <p>
-                        <strong>
-                          Height:&nbsp;
-                        </strong>
-                        {pokeStats.height}
-                      </p>
+                        <ul>
+                          <li>
+                            <strong>Height: </strong> {pokeStats.height}
+                          </li>
 
-                      <p>
-                        <strong>
-                          Weight:&nbsp;
-                        </strong>
-                        {pokeStats.weight}
-                      </p>
+                          <li>
+                            <strong>Weight: </strong> {pokeStats.weight}
+                          </li>
 
-                      <p>
-                        <strong>
-                          Abilities:&nbsp;
-                        </strong>
-                        {pokeStats.abilities}
-                      </p>
+                          <li>
+                            <strong>Abilities: </strong> {pokeStats.abilities}
+                          </li>
 
-                      <p>
-                        <strong>
-                          Type(s):&nbsp;
-                        </strong>
-                        {pokeStats.types}
-                      </p>
+                          <li>
+                            <strong>Type(s): </strong> {pokeStats.types}
+                          </li>
+                        </ul>
+                      </code>
                     </Col>
                   </Row>
                 </Container>
               </Modal.Body>
+
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>Close</Button>
               </Modal.Footer>
             </Modal>
-
-              <div className="pokeStatsCard">
-              </div>
-        
           </div>
         ))}
       </div>

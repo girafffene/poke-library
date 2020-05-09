@@ -1,3 +1,7 @@
+body {
+  margin-top: 100px;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -7,13 +11,13 @@ header {
 
 header h1 {
     color: white;
-    font-weight: 900;
+    padding-left: 18px;
 }
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 225px 102px 0px 290px;
+    padding: 236px 270px 0px 290px;
 
 }
 
@@ -25,7 +29,6 @@ header h1 {
 
     text-transform: capitalize;
     font-size: 15px;
-    color: yellowgreen;
 
     background-image: url("../assets/pokeball.png");
     background-size: contain;
@@ -40,8 +43,41 @@ header h1 {
 
 .pokemonButton p {
     background-color: rgb(56, 56, 56);
+    margin-bottom: 0px;
+    width: 99px;
+    border-radius: 6px;
+    color: white;
 }
 
-.modal {
-    height: 700px;
+.btn-primary {
+    color: black; 
+    background-color: transparent;
+    border-color: transparent;
+}
+
+button {
+    border-radius: 100%;
+}
+
+.pokename-title {
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+.pokeImg {
+    height: 150px;
+    width: auto;
+}
+
+.modal-column {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
