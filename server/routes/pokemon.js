@@ -9,7 +9,7 @@ data = {
 
 //calling API to get information
 router.get("/newpokemon", (req, res, next) => {
-    axios.get("https://pokeapi.co/api/v2/pokemon/?limit=22").then(resp => {
+    axios.get("https://pokeapi.co/api/v2/pokemon/?limit=6").then(resp => {
         const obj = resp.data.results
         
         res.json(obj)
@@ -51,7 +51,7 @@ router.post("/pokename", (req, res, next) => {
                 img: stats.sprites.front_default,
             }
             
-            console.log(pokeStats)
+
             res.json(pokeStats)
         }
     )
