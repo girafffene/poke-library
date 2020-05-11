@@ -213,7 +213,7 @@ function getPokemonEleven() {
   return dispatch => {
     axios.get("/api/pokemoneleven").then(resp => {
       dispatch({
-        type: GET_POKEMON_5,
+        type: GET_POKEMON_11,
         payload: resp.data
       })
     })
