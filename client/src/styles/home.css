@@ -125,3 +125,23 @@ ul {
 
     border: 2px solid white;
 }
+
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #007bff;;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
