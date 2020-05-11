@@ -2,23 +2,35 @@ body {
   margin-top: 100px;
 }
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 236px 270px 0px 290px;
+
+}
+
 header {
     display: flex;
     justify-content: center;
-    align-content: center;
-    text-align: center;
 }
 
 header h1 {
     color: white;
+
     padding-left: 18px;
 }
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 236px 270px 0px 290px;
+button {
+    border-radius: 100%;
+}
 
+.btn-primary {
+    color: black; 
+
+    background-color: transparent;
+    
+    border-color: transparent;
 }
 
 .pokemonButton {
@@ -43,41 +55,73 @@ header h1 {
 
 .pokemonButton p {
     background-color: rgb(56, 56, 56);
+
     margin-bottom: 0px;
+
     width: 99px;
-    border-radius: 6px;
+
+    border-radius: 5px;
+
     color: white;
 }
 
-.btn-primary {
-    color: black; 
-    background-color: transparent;
-    border-color: transparent;
-}
 
-button {
-    border-radius: 100%;
+.modal-column {
+    flex-direction: column;
+    text-align: center;
 }
 
 .pokename-title {
     text-transform: capitalize;
+
     justify-content: center;
 }
 
 .pokeImg {
-    height: 150px;
+    height: 175px;
     width: auto;
-}
-
-.modal-column {
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
 }
 
 ul {
     list-style: none;
+    
     margin-bottom: 0px;
     padding-left: 0px;
+}
+
+.pagination {
+    display: flex;
+
+    margin-top: 25px;
+    padding-left: 42px;
+}
+
+.pagination span {
+    text-align: center;
+
+    cursor: pointer;
+
+    color: black;
+
+    transition: background-color .3s;
+
+    margin: 5px;
+    padding-top: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 50%;
+
+    background-color: rgb(73, 71, 74);
+
+    width: 50px;
+    height: 50px;
+}
+
+.pagination span.active {
+    background-color: rgb(210, 56, 51);
+
+    color: white;
+    font-weight: bold;
+
+    border: 2px solid white;
 }

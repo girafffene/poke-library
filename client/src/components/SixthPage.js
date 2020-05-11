@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, {useState} from "react"
 import { Link } from "react-router-dom"
 
 import Modal from "react-bootstrap/Modal"
@@ -13,7 +13,7 @@ import "../styles/home.css"
 import { usePokemon } from "../hooks"
 
 export default function Pokemons() {
-  const { pokeMon, pushName, pokeStats } = usePokemon()
+  const { pokeMon6, pushName, pokeStats } = usePokemon()
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false)
@@ -26,7 +26,7 @@ export default function Pokemons() {
       </header>
 
       <div className="wrapper">
-        { pokeMon.map(animal => (
+        { pokeMon6.map(animal => (
           <div onClick={e => pushName(animal.name)} id={animal.name} key={`animal + ${animal.name}`}>
 
             <Button className="pokemonButton" variant="primary" onClick={handleShow}>
@@ -73,50 +73,52 @@ export default function Pokemons() {
               </Modal.Body>
 
               <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>Close</Button>
+                <Button variant="secondary" onClick={handleClose}>
+                    Close
+                </Button>
               </Modal.Footer>
             </Modal>
           </div>
         ))}
 
         <div className="pagination">
-          <span className="active">1</span>
-          <Link to={"/page2"}>
-            <span>2</span>
-          </Link>
-          <Link to={"/page3"}>
-            <span>3</span>
-          </Link>
-          <Link to={"/page4"}>
-            <span>4</span>
-          </Link>
-          <Link to={"/page5"}>
-            <span>5</span>
-          </Link>
-          <Link to={"/page6"}>
-            <span>6</span>
-          </Link>
-          <Link to={"/page7"}>
-            <span>7</span>
-          </Link>
-          <Link to={"/page8"}>
-            <span>8</span>
-          </Link>
-          <Link to={"/page9"}>
-            <span>9</span>
-          </Link>
-          <Link to={"/page10"}>
-            <span>10</span>
-          </Link>
-          <Link to={"/page11"}>
-            <span>11</span>
-          </Link>
-          <Link to={"/page12"}>
-            <span>12</span>
-          </Link>
-          <Link to={"/page13"}>
-            <span>13</span>
-          </Link>
+            <Link to={"/"}>
+                <span>1</span>
+            </Link>
+            <Link to={"/page2"}>
+                <span>2</span>
+            </Link>
+            <Link to={"/page3"}>
+                <span>3</span>
+            </Link>
+            <Link to={"/page4"}>
+                <span>4</span>
+            </Link>
+            <Link to={"/page5"}>
+              <span>5</span>
+            </Link>
+            <span className="active">6</span>
+            <Link to={"/page7"}>
+              <span>7</span>
+            </Link>
+            <Link to={"/page8"}>
+              <span>8</span>
+            </Link>
+            <Link to={"/page9"}>
+              <span>9</span>
+            </Link>
+            <Link to={"/page10"}>
+              <span>10</span>
+            </Link>
+            <Link to={"/page11"}>
+              <span>11</span>
+            </Link>
+            <Link to={"/page12"}>
+              <span>12</span>
+            </Link>
+            <Link to={"/page13"}>
+              <span>13</span>
+            </Link>
         </div>
       </div>
     </div>
