@@ -23,6 +23,7 @@ export default function Pokemons() {
     <div>
       <header>
         <h1>Pokemon Library</h1>
+        <p>First Generation</p>
       </header>
 
       <div className="wrapper">

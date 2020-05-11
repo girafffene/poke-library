@@ -13,9 +13,12 @@ body {
 header {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-header h1 {
+header h1,
+header p {
     color: white;
 
     padding-left: 18px;
