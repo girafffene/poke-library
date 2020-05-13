@@ -1,6 +1,8 @@
+//imported dependencies
 import React from "react"
 import {BrowserRouter as Router, Route} from "react-router-dom"
 
+//imported components
 import Home from "./Home"
 import SecondPage from "./SecondPage"
 import ThirdPage from "./ThirdPage"
@@ -20,6 +22,7 @@ export default function App() {
   return (
     <Router>
       <div>
+        {/* adding routes for pages */}
         <Route exact path="/" component={Home} />
         <Route exact path="/page2" component={SecondPage} />
         <Route exact path="/page3" component={ThirdPage} />

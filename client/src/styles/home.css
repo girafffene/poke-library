@@ -1,19 +1,22 @@
-body {
-  margin-top: 100px;
+html {
+    box-sizing: border-box;
 }
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
-    padding: 236px 270px 0px 290px;
-
+body {
+    margin-top: 100px;
 }
 
 header {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+
+    justify-content: center;
     text-align: center;
 }
 
@@ -22,6 +25,13 @@ header p {
     color: white;
 
     padding-left: 18px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 236px 270px 0px 290px;
 }
 
 button {
@@ -149,7 +159,9 @@ a:link {
   
   /* mouse over link */
   a:hover {
-    color: #007bff;;
+    background-color: #007bff;
+    color: white;
+    border: 2px solid white;
   }
   
   /* selected link */

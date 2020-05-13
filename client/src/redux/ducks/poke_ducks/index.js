@@ -1,3 +1,4 @@
+//imported dependencies
 import { useSelector, useDispatch } from "react-redux"
 import axios from "axios"
 import { useEffect } from "react"
@@ -19,6 +20,7 @@ const GET_POKEMON_13 = "pokemon/GET_POKEMON_13"
 const GET_STATS = "pokemon/GET_STATS"
 const SET_POKESTATS = "pokemon/SET_POKESTATS"
 
+//setting inital state of pokemon calls to an empty array && stats as an empty object
 const initialState = {
   allPokemon: [],
   secondSet: [],
