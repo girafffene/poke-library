@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/poke-library/static/css/main.13f0edbc.chunk.css",
+    "main.js": "/poke-library/static/js/main.70e10aab.chunk.js",
+    "main.js.map": "/poke-library/static/js/main.70e10aab.chunk.js.map",
+    "runtime-main.js": "/poke-library/static/js/runtime-main.8d86a19c.js",
+    "runtime-main.js.map": "/poke-library/static/js/runtime-main.8d86a19c.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/poke-library/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.3b47c0a0.chunk.js": "/poke-library/static/js/2.3b47c0a0.chunk.js",
+    "static/js/2.3b47c0a0.chunk.js.map": "/poke-library/static/js/2.3b47c0a0.chunk.js.map",
+    "index.html": "/poke-library/index.html",
+    "precache-manifest.3372de9b792f8eb6f819fe155a2cc9e4.js": "/poke-library/precache-manifest.3372de9b792f8eb6f819fe155a2cc9e4.js",
+    "service-worker.js": "/poke-library/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/poke-library/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.13f0edbc.chunk.css.map": "/poke-library/static/css/main.13f0edbc.chunk.css.map",
+    "static/js/2.3b47c0a0.chunk.js.LICENSE.txt": "/poke-library/static/js/2.3b47c0a0.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/poke-library/static/media/pokeball.76bf7c6c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d86a19c.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.3b47c0a0.chunk.js",
+    "static/css/main.13f0edbc.chunk.css",
+    "static/js/main.70e10aab.chunk.js"
+  ]
+}
