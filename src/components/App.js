@@ -23,19 +23,19 @@ export default function App() {
     <Router>
       <div>
         {/* adding routes for pages */}
-        <Route exact path="/" component={Home} />
-        <Route exact path="/page2" component={SecondPage} />
-        <Route exact path="/page3" component={ThirdPage} />
-        <Route exact path="/page4" component={FourthPage} />
-        <Route exact path="/page5" component={FifthPage} />
-        <Route exact path="/page6" component={SixthPage} />
-        <Route exact path="/page7" component={SeventhPage} />
-        <Route exact path="/page8" component={EighthPage} />
-        <Route exact path="/page9" component={NinthPage} />
-        <Route exact path="/page10" component={TenthPage} />
-        <Route exact path="/page11" component={EleventhPage} />
-        <Route exact path="/page12" component={TwelfthPage} />
-        <Route exact path="/page13" component={ThirteenthPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/" component={Home} />
+        <Route exact path="http://girafffene.github.io/poke-library/page2" component={SecondPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page3" component={ThirdPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page4" component={FourthPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page5" component={FifthPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page6" component={SixthPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page7" component={SeventhPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page8" component={EighthPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page9" component={NinthPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page10" component={TenthPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page11" component={EleventhPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page12" component={TwelfthPage} />
+        <Route exact path="http://girafffene.github.io/poke-library/page13" component={ThirteenthPage} />
       </div>
     </Router>
   )
