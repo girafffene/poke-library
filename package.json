@@ -7,12 +7,14 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "npm run build",
+    "start": "react-scripts start",
     "client": "cd client && npm start",
     "server": "cd server && npm start",
-    "start": "concurrently \"npm run client\" \"npm run server\""
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scipts eject"
   },
-  "author": "",
+  "author": "ireneperez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/girafffene/poke-library/issues"
@@ -22,6 +24,7 @@
     "concurrently": "^5.1.0",
     "dot-prop": "^5.2.0",
     "react-bootstrap": "^1.0.1",
+    "react-scripts": "^3.4.3",
     "serialize-javascript": "^3.1.0"
   },
   "boilerplate": {
