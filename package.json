@@ -1,9 +1,12 @@
 {
-  "name": "test",
+  "homepage": "http://girafffene.github.io/poke-library",
+  "name": "poke-library",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a pokemon library for the first generation of pokemon.",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "client": "cd client && npm start",
     "server": "cd server && npm start",
     "start": "concurrently \"npm run client\" \"npm run server\""
@@ -11,9 +14,8 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate/issues"
+    "url": "https://github.com/girafffene/poke-library/issues"
   },
-  "homepage": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate#readme",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "concurrently": "^5.1.0",
