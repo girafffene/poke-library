@@ -1,5 +1,5 @@
 {
-  "homepage": "https://girafffene.github.io/poke-library",
+  "homepage": "girafffene.github.io/poke-library",
   "name": "poke-library",
   "version": "1.0.0",
   "description": "This is a pokemon library for the first generation of pokemon.",
@@ -48,7 +48,7 @@
     "description": "",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/PC-Fullstack-Spring-2020/boilerpolate.git"
+      "url": "github.com/PC-Fullstack-Spring-2020/boilerpolate.git"
     },
     "license": "ISC"
   },
