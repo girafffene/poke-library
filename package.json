@@ -27,9 +27,6 @@
     ]
   },
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/girafffene/poke-library/issues"
-  },
   "dependencies": {
     "axios": "^0.20.0",
     "bootstrap": "^4.4.1",
