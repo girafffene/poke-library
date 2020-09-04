@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/girafffene.github.io/poke-library/static/css/main.f8df62fc.chunk.css",
-    "main.js": "/girafffene.github.io/poke-library/static/js/main.a09cc27d.chunk.js",
-    "main.js.map": "/girafffene.github.io/poke-library/static/js/main.a09cc27d.chunk.js.map",
-    "runtime-main.js": "/girafffene.github.io/poke-library/static/js/runtime-main.c54e00fa.js",
-    "runtime-main.js.map": "/girafffene.github.io/poke-library/static/js/runtime-main.c54e00fa.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/girafffene.github.io/poke-library/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.3b47c0a0.chunk.js": "/girafffene.github.io/poke-library/static/js/2.3b47c0a0.chunk.js",
-    "static/js/2.3b47c0a0.chunk.js.map": "/girafffene.github.io/poke-library/static/js/2.3b47c0a0.chunk.js.map",
-    "index.html": "/girafffene.github.io/poke-library/index.html",
-    "precache-manifest.045935555bb73c5f1bcb31dd44c552ad.js": "/girafffene.github.io/poke-library/precache-manifest.045935555bb73c5f1bcb31dd44c552ad.js",
-    "service-worker.js": "/girafffene.github.io/poke-library/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/girafffene.github.io/poke-library/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.f8df62fc.chunk.css.map": "/girafffene.github.io/poke-library/static/css/main.f8df62fc.chunk.css.map",
-    "static/js/2.3b47c0a0.chunk.js.LICENSE.txt": "/girafffene.github.io/poke-library/static/js/2.3b47c0a0.chunk.js.LICENSE.txt",
-    "static/media/home.css": "/girafffene.github.io/poke-library/static/media/pokeball.76bf7c6c.png"
+    "main.css": "/poke-library/static/css/main.13f0edbc.chunk.css",
+    "main.js": "/poke-library/static/js/main.bed79855.chunk.js",
+    "main.js.map": "/poke-library/static/js/main.bed79855.chunk.js.map",
+    "runtime-main.js": "/poke-library/static/js/runtime-main.8d86a19c.js",
+    "runtime-main.js.map": "/poke-library/static/js/runtime-main.8d86a19c.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/poke-library/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.3b47c0a0.chunk.js": "/poke-library/static/js/2.3b47c0a0.chunk.js",
+    "static/js/2.3b47c0a0.chunk.js.map": "/poke-library/static/js/2.3b47c0a0.chunk.js.map",
+    "index.html": "/poke-library/index.html",
+    "precache-manifest.ee06507b3ef7f6c51aa656588f8e6c2b.js": "/poke-library/precache-manifest.ee06507b3ef7f6c51aa656588f8e6c2b.js",
+    "service-worker.js": "/poke-library/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/poke-library/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.13f0edbc.chunk.css.map": "/poke-library/static/css/main.13f0edbc.chunk.css.map",
+    "static/js/2.3b47c0a0.chunk.js.LICENSE.txt": "/poke-library/static/js/2.3b47c0a0.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/poke-library/static/media/pokeball.76bf7c6c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c54e00fa.js",
+    "static/js/runtime-main.8d86a19c.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.3b47c0a0.chunk.js",
-    "static/css/main.f8df62fc.chunk.css",
-    "static/js/main.a09cc27d.chunk.js"
+    "static/css/main.13f0edbc.chunk.css",
+    "static/js/main.bed79855.chunk.js"
   ]
 }
