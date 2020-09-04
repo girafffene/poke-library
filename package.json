@@ -3,7 +3,6 @@
   "name": "poke-library",
   "version": "1.0.0",
   "description": "This is a pokemon library for the first generation of pokemon.",
-  "private": "true",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
