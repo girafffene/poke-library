@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53792baccc2fc19910b100790b8831a2",
+    "revision": "a1e0f29279b9b77cda54a8536de9006e",
     "url": "/poke-library/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/poke-library/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "b7c791c66473754fe0e9",
+    "revision": "a02ba18385d2f49a2527",
     "url": "/poke-library/static/css/main.13f0edbc.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/poke-library/static/js/2.3b47c0a0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b7c791c66473754fe0e9",
-    "url": "/poke-library/static/js/main.70e10aab.chunk.js"
+    "revision": "a02ba18385d2f49a2527",
+    "url": "/poke-library/static/js/main.503cd2b5.chunk.js"
   },
   {
     "revision": "ed03ebc646a334a3cbdb",
