@@ -20,7 +20,7 @@ import ThirteenthPage from "./ThirteenthPage"
 export default function App() {
 
   return (
-    <Router basename="https://girafffene.github.io/poke-library">
+    <Router basename="/poke-library">
       {/* adding routes for pages */}
       <Route exact path="/" component={Home} />
       <Route exact path="/page2" component={SecondPage} />
