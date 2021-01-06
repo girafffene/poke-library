@@ -28,7 +28,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "concurrently": "^5.1.0",
     "dot-prop": "^5.2.0",
